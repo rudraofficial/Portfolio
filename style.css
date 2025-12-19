@@ -1,0 +1,45 @@
+/* ...existing code... */
+.skills-box {
+    /* ...existing code... */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.experience-box {
+    /* ...existing code... */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.experience-box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.experience-box:hover {
+    scrollbar-width: thin; /* Firefox */
+    -ms-overflow-style: auto; /* IE and Edge */
+}
+
+.experience-box:hover::-webkit-scrollbar {
+    display: block; /* Chrome, Safari, Opera */
+    width: 8px;
+}
+
+.experience-box:hover::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.experience-box:hover::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+.experience-box:hover::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
+}
+/* ...existing code... */
